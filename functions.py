@@ -121,7 +121,7 @@ def extract_details(input_string):
 def askGroq(question = "just say hello world", context = ''):
     
 
-    groq_key = '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'
+    groq_key = YOUR_GROQ_KEY
 
     client = Groq(
         # This is the default and can be omitted
@@ -182,7 +182,7 @@ def get_full_content_a(idx=0, json_news_list=None):
 
 def get_image(topic, tone):
     
-    stabilityai_key = 'sk-Died6F4skmUDQuY3wINyD9c4ZSvX1jcOPEIpK0XaQZ9RwedO'
+    stabilityai_key = YOUR_STABILITYAI_KEY
 
     response = requests.post(
         f"https://api.stability.ai/v2beta/stable-image/generate/core",
@@ -206,7 +206,7 @@ def get_image(topic, tone):
 
 def get_video(transcript):
     
-    heygen_key = 'ZWI0NjhjZDYzNDkyNDE0MGI5OWUyM2ZmMzI1YzlmZGEtMTczMzU5Njk5NA=='
+    heygen_key = YOUR_HEYGEN_KEY
 
     url = "https://api.heygen.com/v2/video/generate"
 
